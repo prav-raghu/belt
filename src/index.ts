@@ -1,8 +1,9 @@
-import { UserInterface } from "./interfaces/user.interface";
-import { UserHandler } from "./handlers/user.handler";
-export default class Library {
-    public user: UserInterface;
+import { TextHandler } from "./handlers/text.handler";
+import { TextInterface } from "./interfaces/text.interface";
+class Main {
+    text: TextInterface;
     constructor() {
-        this.user = new UserHandler();
+        this.text = new TextHandler();
     }
 }
+export const Text = new Main().text;

@@ -4,7 +4,6 @@
         "sourceMap": true,
         "types": ["node", "mocha"],
         "target": "es2018",
-        "rootDir": "src/",
         "module": "commonjs",
         "strict": true,
         "declaration": true,

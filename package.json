@@ -1,9 +1,9 @@
 {
-  "name": "typescript-library-template",
+  "name": "@prav/belt",
   "author": "Prav Raghu",
   "license": "",
   "version": "1.0.0",
-  "description": "template library",
+  "description": "general utilties library",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -11,7 +11,8 @@
   "scripts": {
     "start": "node ./dist/index.js",
     "dev": "tsc --watch | nodemon -L --inspect=0.0.0.0:9001 ./dist/index.js --watch dist",
-    "build": "rimraf dist && tsc"
+    "build": "rimraf dist && tsc",
+    "test": "mocha --timeout 20000 -r ts-node/register tests/**/*.ts"
   },
   "keywords": [
     "tools",
