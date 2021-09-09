@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "sourceMap": true,
+        "types": ["node", "mocha"],
+        "target": "es2018",
+        "rootDir": "src/",
+        "module": "commonjs",
+        "strict": true,
+        "declaration": true,
+        "strictNullChecks": true,
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "experimentalDecorators": false
+    },
+    "typeRoots": ["node_module/@types"],
+    "include": ["src/**/*"],
+    "exclude": ["node_modules/**/*","tests"]
+}

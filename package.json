@@ -1,0 +1,49 @@
+{
+  "name": "typescript-library-template",
+  "author": "Prav Raghu",
+  "license": "",
+  "version": "1.0.0",
+  "description": "template library",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "tsc --watch | nodemon -L --inspect=0.0.0.0:9001 ./dist/index.js --watch dist",
+    "build": "rimraf dist && tsc"
+  },
+  "keywords": [
+    "tools",
+    "assistance",
+    "library"
+  ],
+  "dependencies": {
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/mocha": "^5.2.7",
+    "@types/mssql": "^6.0.0",
+    "@types/node": "^13.5.0",
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/parser": "^2.17.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "coverage": "^0.4.1",
+    "del": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "mocha": "^7.2.0",
+    "mochawesome": "^4.1.0",
+    "nodemon": "^2.0.2",
+    "nyc": "^15.0.0",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5",
+    "vinyl-sourcemaps-apply": "0.2.1"
+  }
+}
