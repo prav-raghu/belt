@@ -39,6 +39,16 @@ describe('text', () => {
         expect(result).equal("hello_world_00_random");
     });
 
+    it('reverse a string', async () => {
+        const result = ctx.reverseWord("pravir");
+        expect(result).equal("rivarp");
+    });
+
+});
+
+describe('text generate random string', () => {
+    const ctx: TextInterface = new TextHandler();
+
     it('return a random 16 character string', async () => {
         const result = ctx.generateRandomAplhaNumericString();
         expect(result.length).equal(16);
@@ -49,16 +59,20 @@ describe('text', () => {
         expect(result.length).equal(8);
     });
 
-    it('reverse a string', async () => {
-        const result = ctx.reverseWord("pravir");
-        expect(result).equal("rivarp");
-    });
+});
+
+describe('text get numeric count of string', () => {
+    const ctx: TextInterface = new TextHandler();
 
     it('get numeric count of string length', async () => {
         const result = ctx.getStringLength("pravir");
         expect(result).equal(6)
     });
 
+});
+
+describe('text palendrome', () => {
+    const ctx: TextInterface = new TextHandler();
     it('get a palendrom for string', async () => {
         const result = ctx.isPalendrome("racecar");
         expect(result).equal(true)
@@ -68,17 +82,10 @@ describe('text', () => {
         const result = ctx.isPalendrome("pravir");
         expect(result).equal(false)
     });
+});
 
-    it('return a trailing padded zero on single digit number', async () => {
-        const result = ctx.pad(1);
-        expect(result).equal("01");
-    });
-
-    it('return a standard format number on double digits', async () => {
-        const result = ctx.pad(10);
-        expect(result).equal("10");
-    });
-
+describe('text padding', () => {
+    const ctx: TextInterface = new TextHandler();
     it('return a double padded format number on single digits', async () => {
         const result = ctx.pad(1, 3);
         expect(result).equal("001");
