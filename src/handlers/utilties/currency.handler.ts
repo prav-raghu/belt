@@ -1,4 +1,4 @@
-import { CurrencyInterface } from "../interfaces/currency.interface";
+import { CurrencyInterface } from "../../interfaces/currency.interface";
 import { NumericHandler } from "./numeric.handler";
 
 export class CurrencyHandler implements CurrencyInterface {

@@ -1,8 +1,6 @@
-**TypeScript Library Template**
+**Belt**
 
-A rather basic implementation of TypeScript library that you can use for whatever you like.
-
-here are the commands to get you going
+a utility library for TypeScript or JavaScript Projects
 
 ```js
 npm run start

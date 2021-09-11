@@ -68,5 +68,45 @@ describe('text', () => {
         const result = ctx.isPalendrome("pravir");
         expect(result).equal(false)
     });
-    
+
+    it('return a trailing padded zero on single digit number', async () => {
+        const result = ctx.pad(1);
+        expect(result).equal("01");
+    });
+
+    it('return a standard format number on double digits', async () => {
+        const result = ctx.pad(10);
+        expect(result).equal("10");
+    });
+
+    it('return a double padded format number on single digits', async () => {
+        const result = ctx.pad(1, 3);
+        expect(result).equal("001");
+    });
+
+    it('return a double padded format number on double digits', async () => {
+        const result = ctx.pad(10, 3);
+        expect(result).equal("010");
+    });
+
+    it('return a single padded format number on single digits with custom pattern', async () => {
+        const result = ctx.pad(1, 2, "1");
+        expect(result).equal("11");
+    });
+
+    it('return a single padded format number on double digits with custom pattern', async () => {
+        const result = ctx.pad(10, 2, "1");
+        expect(result).equal("10");
+    });
+
+    it('return a double padded format number on single digits with custom pattern', async () => {
+        const result = ctx.pad(1, 3, "*");
+        expect(result).equal("**1");
+    });
+
+    it('return a double padded format number on double digits with custom pattern', async () => {
+        const result = ctx.pad(10, 3, "*");
+        expect(result).equal("*10");
+    });
+
 });

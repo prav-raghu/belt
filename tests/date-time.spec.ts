@@ -5,7 +5,7 @@ import { DateTimeHandler } from "../src/handlers/date-time.handler";
 describe('dateTime compareDates', () => {
     const ctx: DateTimeInterface = new DateTimeHandler();
     it('return that todays date is between two particular dates', async () => {
-        const result = ctx.compareDates(ctx.formatDate(new Date("02-01-2021")), ctx.formatDate(new Date("02-31-2021")));
+        const result = ctx.compareDates(ctx.formatDate(new Date("09-11-2021")), ctx.formatDate(new Date("19-11-2021")));
         expect(result).equal(true);
     });
 });
