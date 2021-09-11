@@ -1,4 +1,4 @@
-import { NumericInterface } from "../interfaces/numeric.interface";
+import { NumericInterface } from "../../interfaces/utilities/numeric.interface";
 
 export class NumericHandler implements NumericInterface {
 

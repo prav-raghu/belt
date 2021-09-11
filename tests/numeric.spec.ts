@@ -1,6 +1,6 @@
 import { expect } from "chai";
-import { NumericHandler } from "../src/handlers/numeric.handler";
-import { NumericInterface } from "../src/interfaces/numeric.interface";
+import { NumericHandler } from "../src/handlers/utilities/numeric.handler";
+import { NumericInterface } from "../src/interfaces/utilities/numeric.interface";
 
 describe('numeric toFixed', () => {
     const ctx: NumericInterface = new NumericHandler();

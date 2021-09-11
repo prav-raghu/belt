@@ -3,7 +3,7 @@
   "author": "Prav Raghu",
   "license": "",
   "version": "1.0.0",
-  "description": "general utilties library",
+  "description": "a general utiltiy belt library",
   "main": "dist/index.js",
   "files": [
     "dist"

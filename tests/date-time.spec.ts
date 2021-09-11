@@ -1,6 +1,6 @@
 import { expect } from "chai";
-import { DateTimeInterface } from "../src/interfaces/date-time.interface";
-import { DateTimeHandler } from "../src/handlers/date-time.handler";
+import { DateTimeInterface } from "../src/interfaces/utilities/date-time.interface";
+import { DateTimeHandler } from "../src/handlers/utilities/date-time.handler";
 
 describe('dateTime compareDates', () => {
     const ctx: DateTimeInterface = new DateTimeHandler();

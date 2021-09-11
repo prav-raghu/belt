@@ -1,6 +1,6 @@
 import { expect } from "chai";
-import { CurrencyInterface } from "../src/interfaces/currency.interface";
-import { CurrencyHandler } from "../src/handlers/currency.handler";
+import { CurrencyInterface } from "../src/interfaces/utilities/currency.interface";
+import { CurrencyHandler } from "../src/handlers/utilities/currency.handler";
 
 describe('currency centsConverter', () => {
     const ctx: CurrencyInterface = new CurrencyHandler();

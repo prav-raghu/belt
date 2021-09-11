@@ -1,4 +1,4 @@
-import { TextInterface } from "../interfaces/text.interface";
+import { TextInterface } from "../../interfaces/utilities/text.interface";
 
 export class TextHandler implements TextInterface {
 
@@ -50,5 +50,6 @@ export class TextHandler implements TextInterface {
         const result = number.length >= width ? number : new Array(width - number.length + 1).join(pattern) + number;
         return result;
     }
+    
 
 }

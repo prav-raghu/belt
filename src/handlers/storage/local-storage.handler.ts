@@ -1,4 +1,4 @@
-import { LocalStorageInterface } from "../../interfaces/local-storage.interface";
+import { LocalStorageInterface } from "../../interfaces/storage/local-storage.interface";
 
 export class LocalStorageHandler implements LocalStorageInterface {
 

@@ -1,4 +1,4 @@
-import { CookieInterface } from "../../interfaces/cookie.interface";
+import { CookieInterface } from "../../interfaces/storage/cookie.interface";
 
 export class CookieHandler implements CookieInterface {
 

@@ -1,5 +1,5 @@
 import moment from 'moment';
-import { DateTimeInterface } from '../interfaces/date-time.interface';
+import { DateTimeInterface } from '../../interfaces/utilities/date-time.interface';
 export class DateTimeHandler implements DateTimeInterface {
 
     formatDate(dateObj: string | Date, formatString: string = 'DD/MM/YYYY'): string {

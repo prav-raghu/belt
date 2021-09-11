@@ -1,6 +1,6 @@
 import { expect } from "chai";
-import { TextHandler } from "../src/handlers/text.handler";
-import { TextInterface } from "../src/interfaces/text.interface";
+import { TextHandler } from "../src/handlers/utilities/text.handler";
+import { TextInterface } from "../src/interfaces/utilities/text.interface";
 
 describe('text', () => {
     const ctx: TextInterface = new TextHandler();

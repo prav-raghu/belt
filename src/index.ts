@@ -1,15 +1,16 @@
 import { CookieHandler } from "./handlers/storage/cookie.handler";
 import { LocalStorageHandler } from "./handlers/storage/local-storage.handler";
-import { CurrencyHandler } from "./handlers/utilties/currency.handler";
-import { DateTimeHandler } from "./handlers/utilties/date-time.handler";
-import { NumericHandler } from "./handlers/utilties/numeric.handler";
-import { TextHandler } from "./handlers/utilties/text.handler";
-import { CookieInterface } from "./interfaces/cookie.interface";
-import { CurrencyInterface } from "./interfaces/currency.interface";
-import { DateTimeInterface } from "./interfaces/date-time.interface";
-import { LocalStorageInterface } from "./interfaces/local-storage.interface";
-import { NumericInterface } from "./interfaces/numeric.interface";
-import { TextInterface } from "./interfaces/text.interface";
+import { CurrencyHandler } from "./handlers/utilities/currency.handler";
+import { DateTimeHandler } from "./handlers/utilities/date-time.handler";
+import { NumericHandler } from "./handlers/utilities/numeric.handler";
+import { TextHandler } from "./handlers/utilities/text.handler";
+import { CookieInterface } from "./interfaces/storage/cookie.interface";
+import { LocalStorageInterface } from "./interfaces/storage/local-storage.interface";
+import { CurrencyInterface } from "./interfaces/utilities/currency.interface";
+import { DateTimeInterface } from "./interfaces/utilities/date-time.interface";
+import { NumericInterface } from "./interfaces/utilities/numeric.interface";
+import { TextInterface } from "./interfaces/utilities/text.interface";
+
 class Main {
     text: TextInterface;
     numeric: NumericInterface;
@@ -32,3 +33,4 @@ export const DateTime = new Main().dateTime;
 export const Currency = new Main().currency;
 export const Cookie = new Main().cookie;
 export const LocalStorage = new Main().localStorage;
+
