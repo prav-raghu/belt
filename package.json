@@ -2,7 +2,7 @@
   "name": "@prav/belt",
   "author": "Prav Raghu",
   "license": "",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "a general utiltiy belt library",
   "main": "dist/index.js",
   "files": [

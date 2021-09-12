@@ -4,10 +4,10 @@ An all in one Utility Belt solution for TypeScript and JavaScript projects. Whet
 
 ## Installation
 
-npm i @prav/belt
 
-```bash
-pip install foobar
+
+```javascript
+npm i @prav/belt
 ```
 
 ## Usage
